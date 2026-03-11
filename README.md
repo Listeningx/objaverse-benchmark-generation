@@ -109,4 +109,4 @@ python openshape_clustering_pipeline.py \
 ```
 通过这种结构，可以全面评估一个 3D 检索排序算法在不同难度级别下的表现——既能衡量它区分"非常相似的物体"的精细能力，也能测试它排除"明显不同物体"的基础能力。
 # other benchmark generation
-run_qwen_strategy1.py 一步打分，对应strategy1
+run_qwen_strategy1.py gemini_3_score.py一步打分，对应strategy1
