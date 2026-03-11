@@ -14,8 +14,8 @@ INPUT_DIRS = [
 ]
 OUTPUT_DIR = r"D:\code\score_benchmark\gemini3flash_x.x"  # 输出目录：保存打分结果
 # 2. Gemini 配置（需先配置 API Key，参考下方说明）
-GENAI_API_KEY = "AIzaSyAGOSvLEhVW-Vw1KVozU1Mtu9jKY7eFBXc"  # 替换为你的 Gemini API Key
-os.environ['GEMINI_API_KEY']='AIzaSyAGOSvLEhVW-Vw1KVozU1Mtu9jKY7eFBXc'
+GENAI_API_KEY = ""  # 替换为你的 Gemini API Key
+os.environ['GEMINI_API_KEY']=''
 
 MODEL_NAME = "gemini-3-flash-preview"
 # 3. 评分指令（可根据你的需求修改）
@@ -151,7 +151,7 @@ def send_gemini_request(prompt, image_parts):
     # 配置 API Key
     genai.configure(api_key=GENAI_API_KEY)
     client = genai.Client(
-        # api_key="sk-qVSKal9KNzyij2DQHpKKkvRwEz3ASzzJJrmO6ceI8NOl4AQ0",
+        # api_key="",
         # http_options={
         #     "base_url": "https://api.yyds168.net",  # 替换为你要使用的网址
         # },

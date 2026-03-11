@@ -15,15 +15,14 @@ import hashlib
 import requests
 from typing import Optional, List, Union, Dict, Any
 
-GENAI_API_KEY = "AIzaSyAGOSvLEhVW-Vw1KVozU1Mtu9jKY7eFBXc"  # 替换为你的 Gemini API Key
-os.environ['GEMINI_API_KEY']='AIzaSyAGOSvLEhVW-Vw1KVozU1Mtu9jKY7eFBXc'
+GENAI_API_KEY = ""  # 替换为你的 Gemini API Key
+os.environ['GEMINI_API_KEY']=''
 
 # QWEN API 配置
-QWEN_API_KEY = "sk-188b54b371b54f1a9ed4cd737df7a92b"  # 替换为你的 QWEN API Key
+QWEN_API_KEY = ""  # 替换为你的 QWEN API Key
 QWEN_BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"  # 阿里云 DashScope 兼容模式
 # QWEN_BASE_URL = "http://v2.open.venus.oa.com/llmproxy/chat/completions"
-# ENV_VENUS_OPENAPI_SECRET_ID= "XyxAYLiQvIYXK2kbL3KOR15s"
-# os.environ['ENV_VENUS_OPENAPI_SECRET_ID']=ENV_VENUS_OPENAPI_SECRET_ID
+
 
 # QWEN_DEFAULT_MODEL = "qwen3-vl-235b-a22b-thinking"  # 默认使用 QWEN-VL-Max 多模态模型
 QWEN_DEFAULT_MODEL = "qwen3.5-397b-a17b"
@@ -748,7 +747,7 @@ class LLMInterface:
         
         # 创建客户端
         self.client = genai.Client(
-                #   api_key="sk-qVSKal9KNzyij2DQHpKKkvRwEz3ASzzJJrmO6ceI8NOl4AQ0",
+                #   api_key="",
                 #     http_options={
                 #         "base_url": "https://api.yyds168.net",  # 替换为你要使用的网址
                 #         "timeout": 999999  # 设置超时时间为 600 秒
