@@ -1,0 +1,30 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# LLM 调用缓存
+llm_cache/
+llm_cache_/
+
+# 中间结果文件（排名结果）
+image_ranking_result*.json
+
+# 可视化图片（生成的中间产物）
+*.png
+*.jpg
+*.jpeg
+
+# 原始数据（体积较大，不适合放在 git 仓库）
+raw_objects_group/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
